@@ -12,9 +12,10 @@ import _SwiftConcurrencyShims
 public struct FetchRandomDogImageRequest {
   public init()
 }
-public struct Dog : Swift.Decodable {
+public struct Dog : Swift.Codable {
   public let message: Swift.String
   public let status: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public class DogNetworkInterface : Foundation.ObservableObject {
@@ -64,9 +65,10 @@ public class DogRepository : DogNetwork.DogRepositoryProtocol {
   public func fetchRandomDogImage() -> Combine.AnyPublisher<DogNetwork.Dog, any Swift.Error>
   @objc deinit
 }
-public struct FetchRandomDogImageResponse : Swift.Decodable {
+public struct FetchRandomDogImageResponse : Swift.Codable {
   public let message: Swift.String
   public let status: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol DogAPIServiceProtocol {

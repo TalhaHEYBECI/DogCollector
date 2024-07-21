@@ -50,16 +50,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DogNetwork",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Dog",
         "printedName": "Dog",
@@ -177,6 +167,31 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DogNetwork0A0V6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10DogNetwork0A0V6encode2toys7Encoder_p_tKF",
+            "moduleName": "DogNetwork",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -184,7 +199,8 @@
         "mangledName": "$s10DogNetwork0A0V",
         "moduleName": "DogNetwork",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -193,6 +209,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -1270,6 +1293,31 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10DogNetwork011FetchRandomA13ImageResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10DogNetwork011FetchRandomA13ImageResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DogNetwork",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -1286,6 +1334,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -1970,77 +2025,77 @@
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 797,
       "length": 27,
       "value": "\"Fetching random dog image\""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 840,
+      "offset": 837,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1148,
       "length": 36,
       "value": "\"Finished fetching random dog image\""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 1108,
+      "offset": 1197,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1359,
       "length": 64,
       "value": "\"Error fetching random dog image: \""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 1406,
+      "offset": 1422,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 1435,
+      "offset": 1451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 1670,
+      "offset": 1635,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 1720,
+      "offset": 1681,
       "length": 40,
       "value": "\"Received dog image URL: \""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "StringLiteral",
-      "offset": 1759,
+      "offset": 1720,
       "length": 19,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Presentation\/Interfaces\/DogNetworkInterface.swift",
       "kind": "BooleanLiteral",
-      "offset": 1773,
+      "offset": 1734,
       "length": 4,
       "value": "true"
     },
@@ -2159,72 +2214,9 @@
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 525,
       "length": 41,
       "value": "\"https:\/\/dog.ceo\/api\/breeds\/image\/random\""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 611,
-      "length": 44,
-      "value": "\"Fetching random dog image from URL: \""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 654,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 988,
-      "length": 35,
-      "value": "\"Started fetching random dog image\""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1126,
-      "length": 32,
-      "value": "\"Received response: \""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1157,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1340,
-      "length": 36,
-      "value": "\"Finished fetching random dog image\""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1481,
-      "length": 55,
-      "value": "\"Failed fetching random dog image with error: \""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1535,
-      "length": 17,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Data\/Network\/DogAPIService.swift",
-      "kind": "StringLiteral",
-      "offset": 1646,
-      "length": 37,
-      "value": "\"Cancelled fetching random dog image\""
     },
     {
       "filePath": "\/Users\/talhaheybeci\/Documents\/Projects\/Architect\/DogNetwork\/DogNetwork\/Utilities\/Logger.swift",
