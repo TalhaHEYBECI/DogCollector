@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FEF48A152C4D253A0001E2F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A142C4D253A0001E2F1 /* AppDelegate.swift */; };
-		FEF48A172C4D253A0001E2F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A162C4D253A0001E2F1 /* SceneDelegate.swift */; };
-		FEF48A192C4D253A0001E2F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A182C4D253A0001E2F1 /* ViewController.swift */; };
-		FEF48A1C2C4D253A0001E2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A1A2C4D253A0001E2F1 /* Main.storyboard */; };
-		FEF48A1F2C4D253A0001E2F1 /* DogCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A1D2C4D253A0001E2F1 /* DogCollector.xcdatamodeld */; };
-		FEF48A212C4D253B0001E2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A202C4D253B0001E2F1 /* Assets.xcassets */; };
+		FE85FB7C2C4D3E6A00EE4CC5 /* Navigation in Resources */ = {isa = PBXBuildFile; fileRef = FE85FB782C4D3E6A00EE4CC5 /* Navigation */; };
+		FE85FB7D2C4D3E6A00EE4CC5 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = FE85FB792C4D3E6A00EE4CC5 /* Resources */; };
+		FE85FB7E2C4D3E6A00EE4CC5 /* SupportingFiles in Resources */ = {isa = PBXBuildFile; fileRef = FE85FB7A2C4D3E6A00EE4CC5 /* SupportingFiles */; };
+		FE85FB7F2C4D3E6A00EE4CC5 /* Modules in Resources */ = {isa = PBXBuildFile; fileRef = FE85FB7B2C4D3E6A00EE4CC5 /* Modules */; };
+		FE85FB812C4D3E7B00EE4CC5 /* CoreData in Resources */ = {isa = PBXBuildFile; fileRef = FE85FB802C4D3E7B00EE4CC5 /* CoreData */; };
 		FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */; };
 		FEF48A2F2C4D253B0001E2F1 /* DogCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A2E2C4D253B0001E2F1 /* DogCollectorTests.swift */; };
 		FEF48A392C4D253B0001E2F1 /* DogCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A382C4D253B0001E2F1 /* DogCollectorUITests.swift */; };
@@ -37,13 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE85FB782C4D3E6A00EE4CC5 /* Navigation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Navigation; sourceTree = "<group>"; };
+		FE85FB792C4D3E6A00EE4CC5 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		FE85FB7A2C4D3E6A00EE4CC5 /* SupportingFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SupportingFiles; sourceTree = "<group>"; };
+		FE85FB7B2C4D3E6A00EE4CC5 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
+		FE85FB802C4D3E7B00EE4CC5 /* CoreData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreData; sourceTree = "<group>"; };
 		FEF48A112C4D253A0001E2F1 /* DogCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF48A142C4D253A0001E2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEF48A162C4D253A0001E2F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEF48A182C4D253A0001E2F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FEF48A1B2C4D253A0001E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FEF48A1E2C4D253A0001E2F1 /* DogCollector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogCollector.xcdatamodel; sourceTree = "<group>"; };
-		FEF48A202C4D253B0001E2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF48A232C4D253B0001E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF48A252C4D253B0001E2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF48A2A2C4D253B0001E2F1 /* DogCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,14 +99,13 @@
 		FEF48A132C4D253A0001E2F1 /* DogCollector */ = {
 			isa = PBXGroup;
 			children = (
-				FEF48A142C4D253A0001E2F1 /* AppDelegate.swift */,
-				FEF48A162C4D253A0001E2F1 /* SceneDelegate.swift */,
-				FEF48A182C4D253A0001E2F1 /* ViewController.swift */,
-				FEF48A1A2C4D253A0001E2F1 /* Main.storyboard */,
-				FEF48A202C4D253B0001E2F1 /* Assets.xcassets */,
+				FE85FB802C4D3E7B00EE4CC5 /* CoreData */,
+				FE85FB7B2C4D3E6A00EE4CC5 /* Modules */,
+				FE85FB782C4D3E6A00EE4CC5 /* Navigation */,
+				FE85FB792C4D3E6A00EE4CC5 /* Resources */,
+				FE85FB7A2C4D3E6A00EE4CC5 /* SupportingFiles */,
 				FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */,
 				FEF48A252C4D253B0001E2F1 /* Info.plist */,
-				FEF48A1D2C4D253A0001E2F1 /* DogCollector.xcdatamodeld */,
 			);
 			path = DogCollector;
 			sourceTree = "<group>";
@@ -234,9 +231,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE85FB7F2C4D3E6A00EE4CC5 /* Modules in Resources */,
+				FE85FB812C4D3E7B00EE4CC5 /* CoreData in Resources */,
+				FE85FB7C2C4D3E6A00EE4CC5 /* Navigation in Resources */,
+				FE85FB7E2C4D3E6A00EE4CC5 /* SupportingFiles in Resources */,
 				FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */,
-				FEF48A212C4D253B0001E2F1 /* Assets.xcassets in Resources */,
-				FEF48A1C2C4D253A0001E2F1 /* Main.storyboard in Resources */,
+				FE85FB7D2C4D3E6A00EE4CC5 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF48A192C4D253A0001E2F1 /* ViewController.swift in Sources */,
-				FEF48A152C4D253A0001E2F1 /* AppDelegate.swift in Sources */,
-				FEF48A1F2C4D253A0001E2F1 /* DogCollector.xcdatamodeld in Sources */,
-				FEF48A172C4D253A0001E2F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FEF48A1A2C4D253A0001E2F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEF48A1B2C4D253A0001E2F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,7 +486,6 @@
 		FEF48A422C4D253B0001E2F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -518,7 +505,6 @@
 		FEF48A432C4D253B0001E2F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -538,7 +524,6 @@
 		FEF48A452C4D253B0001E2F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X7FC48GFKJ;
@@ -556,7 +541,6 @@
 		FEF48A462C4D253B0001E2F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X7FC48GFKJ;
@@ -611,19 +595,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FEF48A1D2C4D253A0001E2F1 /* DogCollector.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FEF48A1E2C4D253A0001E2F1 /* DogCollector.xcdatamodel */,
-			);
-			currentVersion = FEF48A1E2C4D253A0001E2F1 /* DogCollector.xcdatamodel */;
-			path = DogCollector.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FEF48A092C4D253A0001E2F1 /* Project object */;
 }
