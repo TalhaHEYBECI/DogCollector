@@ -20,6 +20,8 @@
 		FE85FC812C4D94C900EE4CC5 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC772C4D94C800EE4CC5 /* Navigator.swift */; };
 		FE85FC852C4D96DF00EE4CC5 /* DogNetwork.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE85FC832C4D96D800EE4CC5 /* DogNetwork.xcframework */; };
 		FE85FC862C4D96DF00EE4CC5 /* DogNetwork.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE85FC832C4D96D800EE4CC5 /* DogNetwork.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE85FC8A2C4D9C3900EE4CC5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC892C4D9C3900EE4CC5 /* ImageLoader.swift */; };
+		FE85FC8C2C4D9C5400EE4CC5 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC8B2C4D9C5400EE4CC5 /* RemoteImage.swift */; };
 		FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */; };
 		FEF48A2F2C4D253B0001E2F1 /* DogCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A2E2C4D253B0001E2F1 /* DogCollectorTests.swift */; };
 		FEF48A392C4D253B0001E2F1 /* DogCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A382C4D253B0001E2F1 /* DogCollectorUITests.swift */; };
@@ -70,6 +72,8 @@
 		FE85FC762C4D94C800EE4CC5 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FE85FC772C4D94C800EE4CC5 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		FE85FC832C4D96D800EE4CC5 /* DogNetwork.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = DogNetwork.xcframework; sourceTree = "<group>"; };
+		FE85FC892C4D9C3900EE4CC5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FE85FC8B2C4D9C5400EE4CC5 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		FEF48A112C4D253A0001E2F1 /* DogCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF48A232C4D253B0001E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF48A252C4D253B0001E2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		FE85FC672C4D94C800EE4CC5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FE85FC882C4D9C1E00EE4CC5 /* ImageLoader */,
 				FE85FC682C4D94C800EE4CC5 /* Home */,
 				FE85FC6B2C4D94C800EE4CC5 /* SavedDogs */,
 				FE85FC6D2C4D94C800EE4CC5 /* RandomDogs */,
@@ -182,6 +187,15 @@
 				FE85FC832C4D96D800EE4CC5 /* DogNetwork.xcframework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE85FC882C4D9C1E00EE4CC5 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FE85FC892C4D9C3900EE4CC5 /* ImageLoader.swift */,
+				FE85FC8B2C4D9C5400EE4CC5 /* RemoteImage.swift */,
+			);
+			path = ImageLoader;
 			sourceTree = "<group>";
 		};
 		FEF48A082C4D253A0001E2F1 = {
@@ -372,10 +386,12 @@
 				FE85FC7D2C4D94C900EE4CC5 /* SceneDelegate.swift in Sources */,
 				FE85FC662C4D94AE00EE4CC5 /* DogCollector.xcdatamodeld in Sources */,
 				FE85FC7A2C4D94C900EE4CC5 /* SavedDogsView.swift in Sources */,
+				FE85FC8A2C4D9C3900EE4CC5 /* ImageLoader.swift in Sources */,
 				FE85FC782C4D94C800EE4CC5 /* HomeView.swift in Sources */,
 				FE85FC7B2C4D94C900EE4CC5 /* RandomDogsView.swift in Sources */,
 				FE85FC792C4D94C900EE4CC5 /* HomeCoordinator.swift in Sources */,
 				FE85FC7F2C4D94C900EE4CC5 /* BaseCoordinator.swift in Sources */,
+				FE85FC8C2C4D9C5400EE4CC5 /* RemoteImage.swift in Sources */,
 				FE85FC802C4D94C900EE4CC5 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
