@@ -1,5 +1,5 @@
 //
-//  RemoteImageView.swift
+//  RemoteImage.swift
 //  DogCollector
 //
 //  Created by talha heybeci on 21.07.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RemoteImage: View {
+public struct RemoteImage: View {
     @ObservedObject var imageLoader = ImageLoader()
     let url: URL
 

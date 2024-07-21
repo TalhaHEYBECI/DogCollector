@@ -8,11 +8,11 @@
 import SwiftUI
 import Combine
 
-class ImageLoader: ObservableObject {
+public class ImageLoader: ObservableObject {
     @Published var image: UIImage?
     private var cancellable: AnyCancellable?
 
-    func load(from url: URL) {
+    public func load(from url: URL) {
         cancellable = URLSession.shared.dataTaskPublisher(for: url)
             .map { UIImage(data: $0.data) }
             .replaceError(with: nil)
