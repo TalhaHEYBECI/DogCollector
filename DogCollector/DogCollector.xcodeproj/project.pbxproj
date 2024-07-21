@@ -24,6 +24,10 @@
 		FE85FC8C2C4D9C5400EE4CC5 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC8B2C4D9C5400EE4CC5 /* RemoteImage.swift */; };
 		FE85FC8E2C4DA41600EE4CC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC8D2C4DA41600EE4CC5 /* CoreDataStack.swift */; };
 		FE85FC902C4DA42100EE4CC5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC8F2C4DA42100EE4CC5 /* CoreDataManager.swift */; };
+		FE85FC942C4DBB9200EE4CC5 /* RandomDogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC932C4DBB9200EE4CC5 /* RandomDogsViewModel.swift */; };
+		FE85FC962C4DBC3700EE4CC5 /* SavedDogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC952C4DBC3700EE4CC5 /* SavedDogsViewModel.swift */; };
+		FE85FC982C4DBCA600EE4CC5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC972C4DBCA600EE4CC5 /* HomeViewModel.swift */; };
+		FE85FC9D2C4DBD8A00EE4CC5 /* DogCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC9C2C4DBD8A00EE4CC5 /* DogCustomButton.swift */; };
 		FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */; };
 		FEF48A2F2C4D253B0001E2F1 /* DogCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A2E2C4D253B0001E2F1 /* DogCollectorTests.swift */; };
 		FEF48A392C4D253B0001E2F1 /* DogCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A382C4D253B0001E2F1 /* DogCollectorUITests.swift */; };
@@ -78,6 +82,10 @@
 		FE85FC8B2C4D9C5400EE4CC5 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		FE85FC8D2C4DA41600EE4CC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FE85FC8F2C4DA42100EE4CC5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FE85FC932C4DBB9200EE4CC5 /* RandomDogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogsViewModel.swift; sourceTree = "<group>"; };
+		FE85FC952C4DBC3700EE4CC5 /* SavedDogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDogsViewModel.swift; sourceTree = "<group>"; };
+		FE85FC972C4DBCA600EE4CC5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FE85FC9C2C4DBD8A00EE4CC5 /* DogCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCustomButton.swift; sourceTree = "<group>"; };
 		FEF48A112C4D253A0001E2F1 /* DogCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF48A232C4D253B0001E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF48A252C4D253B0001E2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 			children = (
 				FE85FC692C4D94C800EE4CC5 /* HomeView.swift */,
 				FE85FC6A2C4D94C800EE4CC5 /* HomeCoordinator.swift */,
+				FE85FC972C4DBCA600EE4CC5 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				FE85FC6C2C4D94C800EE4CC5 /* SavedDogsView.swift */,
+				FE85FC952C4DBC3700EE4CC5 /* SavedDogsViewModel.swift */,
 			);
 			path = SavedDogs;
 			sourceTree = "<group>";
@@ -156,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				FE85FC6E2C4D94C800EE4CC5 /* RandomDogsView.swift */,
+				FE85FC932C4DBB9200EE4CC5 /* RandomDogsViewModel.swift */,
 			);
 			path = RandomDogs;
 			sourceTree = "<group>";
@@ -204,6 +215,14 @@
 			path = ImageLoader;
 			sourceTree = "<group>";
 		};
+		FE85FC992C4DBD6800EE4CC5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FE85FC9C2C4DBD8A00EE4CC5 /* DogCustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		FEF48A082C4D253A0001E2F1 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +247,7 @@
 		FEF48A132C4D253A0001E2F1 /* DogCollector */ = {
 			isa = PBXGroup;
 			children = (
+				FE85FC992C4DBD6800EE4CC5 /* Components */,
 				FE85FC632C4D94AE00EE4CC5 /* CoreData */,
 				FE85FC672C4D94C800EE4CC5 /* Modules */,
 				FE85FC742C4D94C800EE4CC5 /* Navigation */,
@@ -387,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE85FC982C4DBCA600EE4CC5 /* HomeViewModel.swift in Sources */,
 				FE85FC7C2C4D94C900EE4CC5 /* AppDelegate.swift in Sources */,
 				FE85FC812C4D94C900EE4CC5 /* Navigator.swift in Sources */,
 				FE85FC7D2C4D94C900EE4CC5 /* SceneDelegate.swift in Sources */,
@@ -400,7 +421,10 @@
 				FE85FC7F2C4D94C900EE4CC5 /* BaseCoordinator.swift in Sources */,
 				FE85FC8C2C4D9C5400EE4CC5 /* RemoteImage.swift in Sources */,
 				FE85FC902C4DA42100EE4CC5 /* CoreDataManager.swift in Sources */,
+				FE85FC942C4DBB9200EE4CC5 /* RandomDogsViewModel.swift in Sources */,
+				FE85FC9D2C4DBD8A00EE4CC5 /* DogCustomButton.swift in Sources */,
 				FE85FC802C4D94C900EE4CC5 /* Coordinator.swift in Sources */,
+				FE85FC962C4DBC3700EE4CC5 /* SavedDogsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
