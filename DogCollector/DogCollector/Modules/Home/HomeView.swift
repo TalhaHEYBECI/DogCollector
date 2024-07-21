@@ -9,30 +9,22 @@ import SwiftUI
 
 struct HomeView: View {
     
-    var coordinator : HomeCoordinator?
-    
+    @StateObject private var viewModel = HomeViewModel()
+    var coordinator: HomeCoordinator?
+
     var body: some View {
         VStack {
             
-            Button(action: {
-                coordinator?.goToSavedDogsView()
-            }){
-                Text("Go to Saved Screen")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            DogCustomButton(title: "Go to Saved Screen") {
+                viewModel.goToSavedDogsView()
             }
             
-            Button(action: {
-                coordinator?.goToRandomDogsView()
-            }){
-                Text("Go to Random Screen")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            DogCustomButton(title: "Go to Random Screen") {
+                viewModel.goToRandomDogsView()
             }
+        }
+        .onAppear {
+            viewModel.coordinator = coordinator
         }
     }
 }

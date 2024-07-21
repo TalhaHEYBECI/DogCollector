@@ -6,79 +6,42 @@
 //
 
 import SwiftUI
-import DogNetwork
 
 struct RandomDogsView: View {
 
-    var coordinator: HomeCoordinator?
-    @ObservedObject private var dogNetworkInterface = DogNetworkInterface()
+    @StateObject private var viewModel = RandomDogsViewModel()
     @State private var refreshID = UUID()
-    @State private var dogImage: UIImage?
+    var coordinator : HomeCoordinator?
 
     var body: some View {
 
         VStack {
-            if let url = URL(string: dogNetworkInterface.dogImageURL), !dogNetworkInterface.dogImageURL.isEmpty {
+            if let url = URL(string: viewModel.dogImageURL), !viewModel.dogImageURL.isEmpty {
                 RemoteImage(url: url)
                     .frame(width: 300, height: 300)
-            } else if !dogNetworkInterface.errorMessage.isEmpty {
-                Text(dogNetworkInterface.errorMessage)
+            } else if !viewModel.errorMessage.isEmpty {
+                Text(viewModel.errorMessage)
                     .foregroundColor(.red)
             } else {
                 Text("Loading...")
             }
-
-            Button(action: {
-                dogNetworkInterface.fetchRandomDogImage()
-            }) {
-                Text("Get Random Image")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+            
+            DogCustomButton(title: "Get Random Image") {
+                viewModel.fetchRandomDogImage()
             }
 
-            Button(action: {
-                if let url = URL(string: dogNetworkInterface.dogImageURL) {
-                    fetchImage(from: url) { image in
-                        if let image = image {
-                            CoreDataManager.shared.createDogImage(image: image, url: dogNetworkInterface.dogImageURL)
-                            self.dogImage = image
-                        } else {
-                            print("Failed to load image from URL")
-                        }
-                    }
-                }
-            }) {
-                Text("Save Dog Image")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+            DogCustomButton(title: "Save Dog Image") {
+                viewModel.saveDogImage()
             }
         }
         .id(refreshID)
         .padding()
         .onAppear {
-            dogNetworkInterface.fetchRandomDogImage()
+            viewModel.fetchRandomDogImage()
         }
-        .onReceive(dogNetworkInterface.imageUpdated) { _ in
+        .onReceive(viewModel.$dogImageURL) { _ in
             refreshID = UUID()
         }
-    }
-
-    private func fetchImage(from url: URL, completion: @escaping (UIImage?) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil, let image = UIImage(data: data) else {
-                DispatchQueue.main.async {
-                    completion(nil)
-                }
-                return
-            }
-            DispatchQueue.main.async {
-                completion(image)
-            }
-        }.resume()
     }
 }
 

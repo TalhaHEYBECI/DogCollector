@@ -9,16 +9,16 @@ import SwiftUI
 
 struct SavedDogsView: View {
 
+    @StateObject private var viewModel = SavedDogsViewModel()
     var coordinator: HomeCoordinator?
-    @State private var savedDogImages: [DogImageEntity] = []
 
     var body: some View {
         VStack {
-            if savedDogImages.isEmpty {
+            if viewModel.savedDogImages.isEmpty {
                 Text("No saved images")
                     .foregroundColor(.gray)
             } else {
-                List(savedDogImages, id: \.self) { dogImage in
+                List(viewModel.savedDogImages, id: \.self) { dogImage in
                     if let imageData = dogImage.imageData, let uiImage = UIImage(data: imageData) {
                         Image(uiImage: uiImage)
                             .resizable()
@@ -32,13 +32,9 @@ struct SavedDogsView: View {
             }
         }
         .onAppear {
-            fetchSavedDogImages()
+            viewModel.fetchSavedDogImages()
         }
         .navigationBarTitle("Saved Dogs", displayMode: .inline)
-    }
-
-    private func fetchSavedDogImages() {
-        savedDogImages = CoreDataManager.shared.fetchAllDogImages()
     }
 }
 
