@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  DogCollector
+
+  Created by talha heybeci on 22.07.2024.
+  
+*/
+
+// MARK: - Home View
+
+"homeView_button_goToSavedScreen"           = "Kaydedilen Ekrana Git";
+"homeView_button_goToRandomScreen"          = "Rastgele Ekrana Git";
+
+// MARK: - Random Dogs View
+
+"randomDogsView_button_getRandomImage"      = "Rastgele Resim Getir";
+"randomDogsView_button_saveDogImage"        = "Köpek Resmini Kaydet";
+"randomDogsView_text_loading"               = "Yükleniyor...";
+
+// MARK: - Saved Dogs View
+
+"savedDogsView_nav_title"                   = "Kayıtlı Köpekler";
+"savedDogsView_text_noSavedImages"          = "Kayıtlı resim yok";
+"savedDogsView_text_failedToLoadImage"      = "Resim yüklenemedi";

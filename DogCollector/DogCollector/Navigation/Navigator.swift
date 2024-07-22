@@ -9,6 +9,7 @@ import UIKit
 
 public class Navigator {
     
+    // MARK: - Properties
     static let shared = Navigator()
     
     public enum NavigatorType {
@@ -16,8 +17,10 @@ public class Navigator {
         case present
     }
     
+    // MARK: - Initialization
     public init() {}
     
+    // MARK: - Navigation
     public func navigate(from root: UIViewController, to viewController: UIViewController, navigationType: NavigatorType) {
         switch navigationType {
         case .push:

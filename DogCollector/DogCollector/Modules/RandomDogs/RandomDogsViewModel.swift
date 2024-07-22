@@ -12,6 +12,7 @@ import DogNetwork
 
 class RandomDogsViewModel: ObservableObject {
 
+    // MARK: - Properties
     @Published var dogImageURL: String = ""
     @Published var errorMessage: String = ""
     @Published var dogImage: UIImage?
@@ -19,23 +20,12 @@ class RandomDogsViewModel: ObservableObject {
     private let dogNetworkInterface = DogNetworkInterface()
     private var cancellables = Set<AnyCancellable>()
     
+    // MARK: - Initializer
     init() {
-        dogNetworkInterface.$dogImageURL
-            .receive(on: DispatchQueue.main)
-            .assign(to: &$dogImageURL)
-        
-        dogNetworkInterface.$errorMessage
-            .receive(on: DispatchQueue.main)
-            .assign(to: &$errorMessage)
-        
-        dogNetworkInterface.imageUpdated
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] in
-                self?.fetchImage()
-            }
-            .store(in: &cancellables)
+        setupBindings()
     }
     
+    // MARK: - Methods
     func fetchRandomDogImage() {
         dogNetworkInterface.fetchRandomDogImage()
     }
@@ -52,6 +42,23 @@ class RandomDogsViewModel: ObservableObject {
                 print("Failed to load image from URL")
             }
         }
+    }
+    
+    private func setupBindings() {
+        dogNetworkInterface.$dogImageURL
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$dogImageURL)
+        
+        dogNetworkInterface.$errorMessage
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$errorMessage)
+        
+        dogNetworkInterface.imageUpdated
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] in
+                self?.fetchImage()
+            }
+            .store(in: &cancellables)
     }
     
     private func fetchImage(from url: URL, completion: @escaping (UIImage?) -> Void) {

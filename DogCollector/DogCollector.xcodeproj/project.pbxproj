@@ -28,6 +28,11 @@
 		FE85FC962C4DBC3700EE4CC5 /* SavedDogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC952C4DBC3700EE4CC5 /* SavedDogsViewModel.swift */; };
 		FE85FC982C4DBCA600EE4CC5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC972C4DBCA600EE4CC5 /* HomeViewModel.swift */; };
 		FE85FC9D2C4DBD8A00EE4CC5 /* DogCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FC9C2C4DBD8A00EE4CC5 /* DogCustomButton.swift */; };
+		FE85FCDB2C4DC29B00EE4CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE85FCDD2C4DC29B00EE4CC5 /* Localizable.strings */; };
+		FE85FCE22C4DC51700EE4CC5 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FCE12C4DC51700EE4CC5 /* String+Localization.swift */; };
+		FE85FCE52C4DC55200EE4CC5 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FCE42C4DC55200EE4CC5 /* LocalizationService.swift */; };
+		FE85FCE72C4DC56000EE4CC5 /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FCE62C4DC56000EE4CC5 /* LocalizationKeys.swift */; };
+		FED7A69A2C4E1EF700032316 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7A6992C4E1EF700032316 /* ImageAsset.swift */; };
 		FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */; };
 		FEF48A2F2C4D253B0001E2F1 /* DogCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A2E2C4D253B0001E2F1 /* DogCollectorTests.swift */; };
 		FEF48A392C4D253B0001E2F1 /* DogCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A382C4D253B0001E2F1 /* DogCollectorUITests.swift */; };
@@ -86,6 +91,13 @@
 		FE85FC952C4DBC3700EE4CC5 /* SavedDogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDogsViewModel.swift; sourceTree = "<group>"; };
 		FE85FC972C4DBCA600EE4CC5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FE85FC9C2C4DBD8A00EE4CC5 /* DogCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCustomButton.swift; sourceTree = "<group>"; };
+		FE85FCDC2C4DC29B00EE4CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE85FCDE2C4DC35D00EE4CC5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FE85FCDF2C4DC35D00EE4CC5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FE85FCE12C4DC51700EE4CC5 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		FE85FCE42C4DC55200EE4CC5 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		FE85FCE62C4DC56000EE4CC5 /* LocalizationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
+		FED7A6992C4E1EF700032316 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		FEF48A112C4D253A0001E2F1 /* DogCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF48A232C4D253B0001E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF48A252C4D253B0001E2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,7 +195,8 @@
 		FE85FC722C4D94C800EE4CC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FE85FC732C4D94C800EE4CC5 /* Assets.xcassets */,
+				FED7A6982C4E1EE600032316 /* Assets */,
+				FE85FCE32C4DC53B00EE4CC5 /* Localization */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,6 +236,33 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		FE85FCE02C4DC4EE00EE4CC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FE85FCE12C4DC51700EE4CC5 /* String+Localization.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FE85FCE32C4DC53B00EE4CC5 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FE85FCDD2C4DC29B00EE4CC5 /* Localizable.strings */,
+				FE85FCE42C4DC55200EE4CC5 /* LocalizationService.swift */,
+				FE85FCE62C4DC56000EE4CC5 /* LocalizationKeys.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FED7A6982C4E1EE600032316 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE85FC732C4D94C800EE4CC5 /* Assets.xcassets */,
+				FED7A6992C4E1EF700032316 /* ImageAsset.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FEF48A082C4D253A0001E2F1 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +287,7 @@
 		FEF48A132C4D253A0001E2F1 /* DogCollector */ = {
 			isa = PBXGroup;
 			children = (
+				FE85FCE02C4DC4EE00EE4CC5 /* Extension */,
 				FE85FC992C4DBD6800EE4CC5 /* Components */,
 				FE85FC632C4D94AE00EE4CC5 /* CoreData */,
 				FE85FC672C4D94C800EE4CC5 /* Modules */,
@@ -363,6 +404,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = FEF48A082C4D253A0001E2F1;
 			productRefGroup = FEF48A122C4D253A0001E2F1 /* Products */;
@@ -382,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE85FC7E2C4D94C900EE4CC5 /* Assets.xcassets in Resources */,
+				FE85FCDB2C4DC29B00EE4CC5 /* Localizable.strings in Resources */,
 				FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,11 +456,14 @@
 				FE85FC7D2C4D94C900EE4CC5 /* SceneDelegate.swift in Sources */,
 				FE85FC662C4D94AE00EE4CC5 /* DogCollector.xcdatamodeld in Sources */,
 				FE85FC7A2C4D94C900EE4CC5 /* SavedDogsView.swift in Sources */,
+				FE85FCE52C4DC55200EE4CC5 /* LocalizationService.swift in Sources */,
 				FE85FC8A2C4D9C3900EE4CC5 /* ImageLoader.swift in Sources */,
+				FED7A69A2C4E1EF700032316 /* ImageAsset.swift in Sources */,
 				FE85FC8E2C4DA41600EE4CC5 /* CoreDataStack.swift in Sources */,
 				FE85FC782C4D94C800EE4CC5 /* HomeView.swift in Sources */,
 				FE85FC7B2C4D94C900EE4CC5 /* RandomDogsView.swift in Sources */,
 				FE85FC792C4D94C900EE4CC5 /* HomeCoordinator.swift in Sources */,
+				FE85FCE72C4DC56000EE4CC5 /* LocalizationKeys.swift in Sources */,
 				FE85FC7F2C4D94C900EE4CC5 /* BaseCoordinator.swift in Sources */,
 				FE85FC8C2C4D9C5400EE4CC5 /* RemoteImage.swift in Sources */,
 				FE85FC902C4DA42100EE4CC5 /* CoreDataManager.swift in Sources */,
@@ -425,6 +471,7 @@
 				FE85FC9D2C4DBD8A00EE4CC5 /* DogCustomButton.swift in Sources */,
 				FE85FC802C4D94C900EE4CC5 /* Coordinator.swift in Sources */,
 				FE85FC962C4DBC3700EE4CC5 /* SavedDogsViewModel.swift in Sources */,
+				FE85FCE22C4DC51700EE4CC5 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +508,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FE85FCDD2C4DC29B00EE4CC5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE85FCDC2C4DC29B00EE4CC5 /* en */,
+				FE85FCDF2C4DC35D00EE4CC5 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FEF48A232C4D253B0001E2F1 /* Base */,
+				FE85FCDE2C4DC35D00EE4CC5 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -477,6 +534,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -540,6 +598,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
