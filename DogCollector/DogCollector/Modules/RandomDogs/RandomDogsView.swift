@@ -23,14 +23,14 @@ struct RandomDogsView: View {
                 Text(viewModel.errorMessage)
                     .foregroundColor(.red)
             } else {
-                Text("Loading...")
+                Text(LocalizationKeys.randomDogsView_text_loading.rawValue)
             }
             
-            DogCustomButton(title: "Get Random Image") {
+            DogCustomButton(title: LocalizationKeys.randomDogsView_button_getRandomImage.rawValue) {
                 viewModel.fetchRandomDogImage()
             }
 
-            DogCustomButton(title: "Save Dog Image") {
+            DogCustomButton(title: LocalizationKeys.randomDogsView_button_saveDogImage.rawValue) {
                 viewModel.saveDogImage()
             }
         }
