@@ -8,9 +8,12 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+    
+    // MARK: - Properties
     var window: UIWindow?
     var homeCoordinator: HomeCoordinator?
 
+    // MARK: - UIScene Lifecycle
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         

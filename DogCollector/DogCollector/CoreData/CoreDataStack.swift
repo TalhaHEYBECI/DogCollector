@@ -9,10 +9,13 @@ import CoreData
 
 class CoreDataStack {
 
+    // MARK: - Properties
     static let shared = CoreDataStack()
 
+    // MARK: - Initialization
     private init() {}
 
+    // MARK: - Persistent Container
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "DogCollector")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -23,11 +26,13 @@ class CoreDataStack {
         return container
     }()
 
+    // MARK: - Context
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
 
-    func saveContext () {
+    // MARK: - Save Context
+    func saveContext() {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {

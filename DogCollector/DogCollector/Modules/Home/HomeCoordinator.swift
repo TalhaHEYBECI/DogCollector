@@ -10,13 +10,14 @@ import UIKit
 
 class HomeCoordinator: Coordinator {
 
+    // MARK: - Start Method
     override func start() {
         let homeView = HomeView(coordinator: self)
         let hostingController = UIHostingController(rootView: homeView)
         navigationController.viewControllers = [hostingController]
     }
     
-    
+    // MARK: - Navigation Methods
     func goToRandomDogsView() {
         let randomDogsView = RandomDogsView(coordinator: self)
         let hostingController = UIHostingController(rootView: randomDogsView)

@@ -1,4 +1,3 @@
-//
 //  CoreDataManager.swift
 //  DogCollector
 //
@@ -41,9 +40,17 @@ class CoreDataManager {
         }
     }
 
+    // MARK: - Delete
+
+    func deleteDogImage(_ dogImage: DogImageEntity) {
+        context.delete(dogImage)
+        saveContext()
+    }
+
     // MARK: - Save context
 
     private func saveContext() {
         CoreDataStack.shared.saveContext()
     }
 }
+

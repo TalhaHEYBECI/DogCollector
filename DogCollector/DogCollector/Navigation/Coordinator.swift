@@ -8,16 +8,20 @@
 import UIKit.UIViewController
 
 public class Coordinator: BaseCoordinator {
+
+    // MARK: - Properties
     public var parentCoordinator: BaseCoordinator?
     public var childCoordinators: [BaseCoordinator] = []
     public var navigationController: UINavigationController
     
+    // MARK: - Initialization
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
+    // MARK: - Navigation Methods
     public func start() {
-
+        // Implementation of start will be in subclasses
     }
     
     public func navigate(to viewController: UIViewController, navigationType: Navigator.NavigatorType) {

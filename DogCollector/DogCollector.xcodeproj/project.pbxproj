@@ -32,6 +32,7 @@
 		FE85FCE22C4DC51700EE4CC5 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FCE12C4DC51700EE4CC5 /* String+Localization.swift */; };
 		FE85FCE52C4DC55200EE4CC5 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FCE42C4DC55200EE4CC5 /* LocalizationService.swift */; };
 		FE85FCE72C4DC56000EE4CC5 /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE85FCE62C4DC56000EE4CC5 /* LocalizationKeys.swift */; };
+		FED7A69A2C4E1EF700032316 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7A6992C4E1EF700032316 /* ImageAsset.swift */; };
 		FEF48A242C4D253B0001E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF48A222C4D253B0001E2F1 /* LaunchScreen.storyboard */; };
 		FEF48A2F2C4D253B0001E2F1 /* DogCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A2E2C4D253B0001E2F1 /* DogCollectorTests.swift */; };
 		FEF48A392C4D253B0001E2F1 /* DogCollectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48A382C4D253B0001E2F1 /* DogCollectorUITests.swift */; };
@@ -96,6 +97,7 @@
 		FE85FCE12C4DC51700EE4CC5 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		FE85FCE42C4DC55200EE4CC5 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		FE85FCE62C4DC56000EE4CC5 /* LocalizationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
+		FED7A6992C4E1EF700032316 /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		FEF48A112C4D253A0001E2F1 /* DogCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF48A232C4D253B0001E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF48A252C4D253B0001E2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,8 +195,8 @@
 		FE85FC722C4D94C800EE4CC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FED7A6982C4E1EE600032316 /* Assets */,
 				FE85FCE32C4DC53B00EE4CC5 /* Localization */,
-				FE85FC732C4D94C800EE4CC5 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -250,6 +252,15 @@
 				FE85FCE62C4DC56000EE4CC5 /* LocalizationKeys.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		FED7A6982C4E1EE600032316 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE85FC732C4D94C800EE4CC5 /* Assets.xcassets */,
+				FED7A6992C4E1EF700032316 /* ImageAsset.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		FEF48A082C4D253A0001E2F1 = {
@@ -447,6 +458,7 @@
 				FE85FC7A2C4D94C900EE4CC5 /* SavedDogsView.swift in Sources */,
 				FE85FCE52C4DC55200EE4CC5 /* LocalizationService.swift in Sources */,
 				FE85FC8A2C4D9C3900EE4CC5 /* ImageLoader.swift in Sources */,
+				FED7A69A2C4E1EF700032316 /* ImageAsset.swift in Sources */,
 				FE85FC8E2C4DA41600EE4CC5 /* CoreDataStack.swift in Sources */,
 				FE85FC782C4D94C800EE4CC5 /* HomeView.swift in Sources */,
 				FE85FC7B2C4D94C900EE4CC5 /* RandomDogsView.swift in Sources */,
