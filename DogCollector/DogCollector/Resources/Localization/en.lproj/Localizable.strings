@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  DogCollector
+
+  Created by talha heybeci on 22.07.2024.
+  
+*/
+
+// MARK: - Home View
+
+"homeView_button_goToSavedScreen"           = "Go To Saved Screen";
+"homeView_button_goToRandomScreen"          = "Go To Random Screen";
+
+// MARK: - Random Dogs View
+
+"randomDogsView_button_getRandomImage"      = "Get Random Image";
+"randomDogsView_button_saveDogImage"        = "Save Dog Image";
+"randomDogsView_text_loading"               = "Loading...";
+
+// MARK: - Saved Dogs View
+
+"savedDogsView_nav_title"                   = "Saved Dogs";
+"savedDogsView_text_noSavedImages"          = "No saved images";
+"savedDogsView_text_failedToLoadImage"      = "Failed to load image";

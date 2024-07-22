@@ -15,7 +15,7 @@ struct SavedDogsView: View {
     var body: some View {
         VStack {
             if viewModel.savedDogImages.isEmpty {
-                Text("No saved images")
+                Text(LocalizationKeys.savedDogsView_text_noSavedImages.rawValue)
                     .foregroundColor(.gray)
             } else {
                 List(viewModel.savedDogImages, id: \.self) { dogImage in
@@ -25,7 +25,7 @@ struct SavedDogsView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 200)
                     } else {
-                        Text("Failed to load image")
+                        Text(LocalizationKeys.savedDogsView_text_failedToLoadImage.rawValue)
                             .foregroundColor(.red)
                     }
                 }
@@ -34,7 +34,7 @@ struct SavedDogsView: View {
         .onAppear {
             viewModel.fetchSavedDogImages()
         }
-        .navigationBarTitle("Saved Dogs", displayMode: .inline)
+        .navigationBarTitle(LocalizationKeys.savedDogsView_nav_title.rawValue, displayMode: .inline)
     }
 }
 

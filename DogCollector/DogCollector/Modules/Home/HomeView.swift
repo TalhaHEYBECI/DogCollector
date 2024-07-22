@@ -15,11 +15,11 @@ struct HomeView: View {
     var body: some View {
         VStack {
             
-            DogCustomButton(title: "Go to Saved Screen") {
+            DogCustomButton(title: LocalizationKeys.homeView_button_goToSavedScreen.rawValue) {
                 viewModel.goToSavedDogsView()
             }
             
-            DogCustomButton(title: "Go to Random Screen") {
+            DogCustomButton(title: LocalizationKeys.homeView_button_goToRandomScreen.rawValue) {
                 viewModel.goToRandomDogsView()
             }
         }
