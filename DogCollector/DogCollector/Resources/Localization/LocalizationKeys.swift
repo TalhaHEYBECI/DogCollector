@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 enum LocalizationKeys: String {
+    
     // MARK: - Home Case
     case homeView_button_goToSavedScreen        = "homeView_button_goToSavedScreen"
     case homeView_button_goToRandomScreen       = "homeView_button_goToRandomScreen"
@@ -25,7 +26,7 @@ enum LocalizationKeys: String {
 }
 
 extension LocalizationKeys {
-    var localized: LocalizedStringKey {
-        return LocalizedStringKey(self.rawValue)
+    var localized: String {
+        return NSLocalizedString(self.rawValue, comment: "")
     }
 }
