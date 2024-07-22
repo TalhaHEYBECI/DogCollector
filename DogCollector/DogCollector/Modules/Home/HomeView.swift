@@ -9,26 +9,37 @@ import SwiftUI
 
 struct HomeView: View {
     
+    // MARK: - Properties
     @StateObject private var viewModel = HomeViewModel()
     var coordinator: HomeCoordinator?
 
+    // MARK: - Body
     var body: some View {
-        VStack {
-            
-            DogCustomButton(title: LocalizationKeys.homeView_button_goToSavedScreen.localized) {
-                viewModel.goToSavedDogsView()
+        ZStack {
+            Image(asset: .homeViewBackground)
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+            VStack {
+                DogCustomButton(title: LocalizationKeys.homeView_button_goToSavedScreen.localized) {
+                    viewModel.goToSavedDogsView()
+                }
+                .padding()
+
+                DogCustomButton(title: LocalizationKeys.homeView_button_goToRandomScreen.localized) {
+                    viewModel.goToRandomDogsView()
+                }
+                .padding()
             }
-            
-            DogCustomButton(title: LocalizationKeys.homeView_button_goToRandomScreen.localized) {
-                viewModel.goToRandomDogsView()
+            .onAppear {
+                viewModel.coordinator = coordinator
             }
-        }
-        .onAppear {
-            viewModel.coordinator = coordinator
         }
     }
 }
 
+// MARK: - Preview
 #Preview {
     HomeView()
 }
